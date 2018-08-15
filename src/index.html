@@ -4,19 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>FoodMap</title>
 </head>
 <body>
-  
+  <div id = "preloard">
+    <p class = "splash">FoodMap</p>
+  </div>
   <div>
     <h1>FoodMap</h1>
+    <hr class = "barTitle">
   </div>
-  <div id = "presentation">
+  <div>
+    <input type="text" id="myInput"  placeholder="Buscar por nombre de Restaurant" title="tipo por nombre">
   </div>
+  <div id = "presentation"></div>
   <div>
       <ul id="contentRestaurant"></ul>
   </div>
-    
+
 
 
 <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>

@@ -2,14 +2,12 @@
 const photoRestaurant = document.getElementById('photoRestaurant');
 const contentRestaurant = document.getElementById('contentRestaurant');
 const presentation = document.getElementById('presentation');
+const preloard = document.getElementById('preloard');
 
-
-window.onlod = () => {
-    let loader = document.getElementById('loader');
-    loader.style.visibility = 'hiden';
-    loader.style.opacity='0';
+window.onload =  () => {
+    preloard.style.visibility = 'hidden';
+    preloard.style.opacity = '0';
 }
-
 
 firebase.database().ref().child('restaurant/barranco')
 .on('value', (data) => {
@@ -32,7 +30,7 @@ firebase.database().ref().child('restaurant/barranco')
     data.forEach(e => {
         var element = e.val();
         var photo = element.photo;
-        imagen += "<img src="+photo+">";       
+        imagen += "<img src="+photo+" class='sizePicture'>";       
     });
     presentation.innerHTML = imagen;    
 })
