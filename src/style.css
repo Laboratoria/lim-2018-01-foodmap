@@ -1,0 +1,47 @@
+#preloard {
+    font-family: cursive;
+    height: 100%;
+    width: 100%;
+    font-size:75px;
+    background-color: #333; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 2s;    
+}
+.splash {
+    padding:15% 40%;
+    position: absolute;
+    font-size:70px;
+    text-align: center;
+    color:orange;
+}     
+h1 {
+    color:orange;
+    text-align: center;
+    margin: 1;
+    font-size: 50px;
+    margin-top: 0px;
+    font-family: cursive;
+}
+.barTitle {
+    color: bisque;
+}
+<<<<<<< HEAD
+.nav {
+    display:none;z-index:2;
+    width:40%;min-width:300px
+}
+.cont {
+    max-width:1200px;
+    margin-top:100px
+}
+=======
+
+.sizePicture {
+    width: 400px;
+    height: 350px;
+    padding: 10px 20px;
+}
+>>>>>>> 6a7b8aa683a350d5ca29bf93d4cf3bb4d6ac303d

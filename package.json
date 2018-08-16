@@ -1,0 +1,35 @@
+{
+  "name": "lim-2018-01-foodmap",
+  "version": "1.0.0",
+  "description": "Crea una web-app que a través de un input pueda filtrar los restaurantes\r que se encuentran cerca de ti *(Tú decides la estructura que tendrán tus datos,\r puedes crear una lista de restaurantes en un arreglo, en un objeto, consumir una API, etc. Lo importante es que el contenido debe ser dinámico y no estático y el diseño es totalmente libre)*.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test-browser": "opener ./test/index.html",
+    "test-node": "nyc mocha ./test/headless.js && nyc report --reporter=html",
+    "test": "npm run test-node && npm run test-browser"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "htmlhint": "^0.9.13",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1",
+    "opener": "^1.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaryKattyVO/lim-2018-01-foodmap.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaryKattyVO/lim-2018-01-foodmap/issues"
+  },
+  "homepage": "https://github.com/MaryKattyVO/lim-2018-01-foodmap#readme"
+}
